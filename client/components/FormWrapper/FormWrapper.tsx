@@ -1,0 +1,34 @@
+import React from "react";
+import Logo from "../Logo";
+import { IoLogoGithub } from "react-icons/io"
+
+type Props = {
+  children: React.ReactNode
+};
+
+const FormWrapper = ({ children }: Props) => {
+  return (
+    <div className="h-full flex flex-col select-none">
+      <header className="flex flex-col mb-[44px]">
+        <div className="flex flex-row items-center">
+          <Logo width="60" height="30" className={"text-cyellow-500"} />
+          <h2 className="text-[24px] text-cgray-600 ml-2 font-[700]">
+            Magic Post
+          </h2>
+        </div>
+      </header>
+
+      {children}
+
+      <footer className="mt-auto mb-4 flex flex-row items-center gap-4 justify-center text-[12px] text-gray-400 font-medium select-none flex-wrap gap-y-1">
+
+        <span className="flex flex-row items-center hover:cursor-pointer hover:opacity-60 active:opacity-80">
+          <span className="text-lg"><IoLogoGithub></IoLogoGithub></span>
+          <span className="ml-1">Github</span>
+        </span>
+      </footer>
+    </div>
+  );
+};
+
+export default FormWrapper;

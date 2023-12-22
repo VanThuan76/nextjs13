@@ -1,1 +1,1 @@
-# magic-post1
+Magic Post

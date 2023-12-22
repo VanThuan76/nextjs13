@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@types/faker": "^6.6.9",
+    "faker": "^6.6.6"
+  },
+  "dependencies": {
+    "react-modal": "^3.16.1"
+  }
+}
