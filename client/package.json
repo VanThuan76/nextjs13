@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@faker-js/faker": "^8.3.1",
     "@nextui-org/react": "^2.2.9",
     "@reduxjs/toolkit": "^2.0.1",
     "axios": "^1.6.2",
+    "faker": "^6.6.6",
     "flowbite": "^2.2.0",
     "flowbite-react": "^0.7.2",
     "framer-motion": "^10.16.16",
@@ -19,6 +21,7 @@
     "graphql-tag": "^2.12.6",
     "next": "^14.0.4",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.6.2",
     "react-icons": "^4.12.0",

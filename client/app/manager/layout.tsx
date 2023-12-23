@@ -1,5 +1,5 @@
-import ManagerSidebar from "@/components/manager/ManagerSidebar";
-import ManagerHeader from "@/components/manager/ManagerHeader";
+import ManagerSidebar from "@/components/Manager/ManagerSidebar";
+import ManagerHeader from "@/components/Manager/ManagerHeader";
 
 type ManagerLayoutProps = {
   children: React.ReactNode;
