@@ -5,6 +5,8 @@ import { useRouter, usePathname } from "next/navigation";
 const BossSidebar = () => {
   const router = useRouter();
   const pathname = usePathname();
+  const regexUrlAccountManager = /^\/boss\/account_manager(?:\/(create|edit(?:\/\d+)?))?$/;
+  const isAccountManagerPage = regexUrlAccountManager.test(pathname);
   return (
     <aside className="hidden xs:flex flex-col select-none flex-none">
       <div className="flex flex-row items-center gap-3 pb-[30px]">
@@ -109,7 +111,7 @@ const BossSidebar = () => {
         </div>
         <div
           className={`w-full p-[10px] bg-transparent rounded-lg shadow-none cursor-pointer ${
-            pathname === "/boss/account_manager" ? "bg-white" : ""
+            isAccountManagerPage ? "bg-white" : ""
           }`}
           onClick={() => router.push("/boss/account_manager")}
         >

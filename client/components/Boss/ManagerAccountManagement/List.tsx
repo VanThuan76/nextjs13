@@ -63,7 +63,7 @@ const ListManagerAccount = () => {
           <div className="h-full w-[200px]">
             <TraderInput placeholder="EB12345" icon="search"></TraderInput>
           </div>
-          <Link href={"/trader/parcel"} scroll={false}>
+          <Link href={"/boss/account_manager/create"} scroll={false}>
             <button className="outline-none flex-none py-[5px] px-[10px] rounded-[8px] flex flex-row items-center bg-purple-600 hover:opacity-80 hover:cursor-pointer active:opacity-90">
               <span className="material-symbols-outlined"></span>
               <span className="text-[15px] font-normal">Tài khoản mới</span>
@@ -74,13 +74,16 @@ const ListManagerAccount = () => {
           <section className="min-h-10 w-full mt-4  pb-6 flex flex-row items-center text-sm text-[#A0AEC0] font-bold select-none border-b border-b-[#E2E8F0]">
             <span className="w-1/2 sm:w-[40%] xl:w-[30%] ">Mã nhân viên</span>
             <span className="w-1/2 sm:w-[30%] xl:w-[25%] flex flex-row items-center justify-end sm:justify-center">
-              Khu vực
+              Bưu cục
             </span>
             <span className="hidden sm:w-[30%] xl:w-[25%] sm:flex flex-row items-center justify-center">
               Họ và tên
             </span>
             <span className="w-1/2 sm:w-[30%] xl:w-[25%] flex flex-row items-center justify-end sm:justify-center">
               Trạng thái
+            </span>
+            <span className="w-1/2 sm:w-[30%] xl:w-[25%] flex flex-row items-center justify-end sm:justify-center">
+              Hành động
             </span>
           </section>
           <div className="-ml-1 pl-1 -mr-7 px-7 max-h-[416px] overflow-y-auto overflow-x-hidden trader-item">
