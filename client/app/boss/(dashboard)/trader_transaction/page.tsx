@@ -1,7 +1,7 @@
-import ListManagerAccount from "@/components/Boss/ManagerAccountManagement/List";
+import ListTraderManagement from "@/components/Boss/TraderManagement/List";
 
 const TraderTransactionPage = () => {
-  return <ListManagerAccount></ListManagerAccount>;
+  return <ListTraderManagement></ListTraderManagement>;
 };
 
 export default TraderTransactionPage;
